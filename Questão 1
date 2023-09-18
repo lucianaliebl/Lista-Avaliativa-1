@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main(){
+  
+ int X; 
+
+ scanf("%d", &X);
+
+   for(int i = 1896; i <= 2022; i = i++){
+      if(X = i && i != 1916 && i != 1940 && i != 1944){
+         printf("Os Jogos Olimpicos de Verao ocorreram no ano de %d.\n", X);
+      }
+      else{
+         printf("Nao houve Jogos Olimpicos de Verao ou Copa do Mundo no ano de %d.\n", X);
+      }
+   }
+   for(int a = 1930; a <= 2022; a = a + 4){
+      if(X == a && a != 1942 && a != 1946){
+         printf("A Copa do Mundo de Futebol ocorreu no ano de %d.\n", X);
+      }
+      else{
+         printf("Nao houve Jogos Olimpicos de Verao ou Copa do Mundo no ano de %d.\n", X);
+      }
+   }   
+  return 0; 
+
+}
