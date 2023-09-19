@@ -10,14 +10,35 @@ int main() {
     scanf("%d", &senha);
 
     do{
-       if(senha == senhaCadastrada){
-         printf("senha valida!\n");
-         break;
-       }
-       else{
-         printf("senha  invalida!\n");
-         scanf("%d", &senha); 
-       }       
+        printf("senha  invalida!\n");
+        scanf("%d", &senha); 
     } while (senha != senhaCadastrada); 
+
+    if(senha == senhaCadastrada){
+         printf("senha valida!\n");
+    } 
+    
+    return 0;
+}
+#include <stdio.h>
+
+int main() {
+    int senhaCadastrada;
+    int senha; 
+
+    scanf("%d", &senhaCadastrada);
+    printf("senha cadastrada: %d\n", senhaCadastrada);
+
+    scanf("%d", &senha);
+
+    while (senha != senhaCadastrada){
+        printf("senha  invalida!\n");
+        scanf("%d", &senha); 
+    }
+
+    if(senha == senhaCadastrada){
+         printf("senha valida!\n");
+    } 
+
     return 0;
 }
