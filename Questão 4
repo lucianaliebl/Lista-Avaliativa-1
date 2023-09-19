@@ -1,0 +1,27 @@
+
+#include <stdio.h>
+
+int main(){
+   
+   char nivel; 
+   float salario;
+   float salarioNovo;
+
+   scanf("%c", &nivel);
+   scanf("%f", &salario);
+
+   if(nivel == 'a'){
+      salarioNovo = (salario * 0.05 + salario);
+      printf("R$ %.2f\n", salarioNovo);
+   }
+   else if(nivel == 'b'){
+      salarioNovo = (salario * 0.07 + salario);
+      printf("R$ %.2f\n", salarioNovo);
+   }
+   else if(nivel == 'c'){
+      salarioNovo = (salario * 0.08 + salario);
+      printf("R$ %.2f\n", salarioNovo);
+   }
+   
+   return 0;
+}
