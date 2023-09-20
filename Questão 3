@@ -5,7 +5,7 @@ int main() {
     int senha; 
 
     scanf("%d", &senhaCadastrada);
-    printf("senha cadastrada: %d\n", senhaCadastrada);
+   printf("senha cadastrada: %04d\n", senhaCadastrada);
 
     scanf("%d", &senha);
 
@@ -27,7 +27,7 @@ int main() {
     int senha; 
 
     scanf("%d", &senhaCadastrada);
-    printf("senha cadastrada: %d\n", senhaCadastrada);
+    printf("senha cadastrada: %04d\n", senhaCadastrada);
 
     scanf("%d", &senha);
 
