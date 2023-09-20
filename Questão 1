@@ -3,66 +3,6 @@
 int main(){
   
  int X; 
-
- scanf("%d", &X);
-
-   for(int i = 1896; i <= 2022; i = i + 4){
-      if(X == i && i != 1916 && i != 1940 && i != 1944){
-         printf("Os Jogos Olimpicos de Verao ocorreram no ano de %d.\n", X);
-      break;
-      }
-   }
-
-   for(int i = 1930; i <= 2022; i = i + 4){
-      if(X == i && i != 1942 && i != 1946){
-         printf("A Copa do Mundo de Futebol ocorreu no ano de %d.\n", X);
-         break;
-      }
-   }
-
-printf("Nao houve Jogos Olimpicos de Verao ou Copa do Mundo no ano de %d.\n", X);
-   
-
-return 0;
-}
-
-#include <stdio.h>
-
-int main(){
-  
- int X; 
- int ano;
-
- scanf("%d", &X);
-
- ano = X;
-
-   for(int i = 1896; i <= 2022; i = i + 4){
-        if(X == i && i != 1916 && i != 1940 && i != 1944){
-            printf("Os Jogos Olimpicos de Verao ocorreram no ano de %d.\n", ano);
-        break;
-        }
-    }
-
-    for(int a = 1930; a <= 2022; a = a + 4){
-        if(X == a && a != 1942 && a!= 1946){
-            printf("A Copa do Mundo de Futebol ocorreu no ano de %d.\n", ano);
-        break;
-        } else {
-            printf("Nao houve Jogos Olimpicos de Verao ou Copa do Mundo no ano de %d.\n", ano);
-            break;
-        }
-    }
-        
-return 0;
-}
-
-
-#include <stdio.h>
-
-int main(){
-  
- int X; 
  int ano;
  int resposta = 0;
 
@@ -90,6 +30,47 @@ int main(){
 
             printf("Nao houve Jogos Olimpicos de Verao ou Copa do Mundo no ano de %d.\n", ano);
             break;
+        
+return 0;
+}
+
+#include <stdio.h>
+
+int main(){
+  
+ int X; 
+ int ano;
+ int resposta = 0;
+
+ scanf("%d", &X);
+
+ ano = X;
+
+   for(int i = 1896; i <= 2022; i = i + 4){
+        if(X == i && i != 1916 && i != 1940 && i != 1944){
+          resposta = 1;
+        break;
+        }
+    }
+    
+    if(resposta == 0){
+     for(int a = 1930; a <= 2022; a = a + 4){
+        if(X == a && a != 1942 && a!= 1946){
+         resposta = 2;
+        break;
+        }
+     }
+    }
+
+   if(resposta == 1){
+      printf("Os Jogos Olimpicos de Verao ocorreram no ano de %d.\n", ano);
+   }
+   else if(resposta == 2){
+      printf("A Copa do Mundo de Futebol ocorreu no ano de %d.\n", ano);
+   }
+   else{
+      printf("Nao houve Jogos Olimpicos de Verao ou Copa do Mundo no ano de %d.\n", ano);
+   }
         
 return 0;
 }
