@@ -4,33 +4,6 @@ int main(){
 
    int N; 
    int soma = 0;
-   int algarismo; 
-
-   scanf("%d", &N); 
-
-   if(N%2 == 0){
-      printf("%d eh par\n", N);
-   }
-   else{
-      printf("%d eh impar\n", N);
-   }
-
-   while(N != 0){
-    algarismo = N%10;
-    soma = soma + algarismo;
-    N = N/10;
-   }
-   
-   printf("A soma dos algarismos de %d eh %d\n", N, soma);
-   return 0;
-}
-
-#include <stdio.h>
-
-int main(){
-
-   int N; 
-   int soma = 0;
    int algarismo;
    int numero;  
 
