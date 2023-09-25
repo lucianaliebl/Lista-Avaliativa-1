@@ -5,28 +5,6 @@ int main() {
     int senha; 
 
     scanf("%d", &senhaCadastrada);
-   printf("senha cadastrada: %04d\n", senhaCadastrada);
-
-    scanf("%d", &senha);
-
-    do{
-        printf("senha  invalida!\n");
-        scanf("%d", &senha); 
-    } while (senha != senhaCadastrada); 
-
-    if(senha == senhaCadastrada){
-         printf("senha valida!\n");
-    } 
-    
-    return 0;
-}
-#include <stdio.h>
-
-int main() {
-    int senhaCadastrada;
-    int senha; 
-
-    scanf("%d", &senhaCadastrada);
     printf("senha cadastrada: %04d\n", senhaCadastrada);
 
     scanf("%d", &senha);
