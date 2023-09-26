@@ -13,27 +13,22 @@ int main(){
    }
    else {
       if(X > Y){
-         printf("%d eh maior que %d\n", X, Y);
+            printf("%d eh maior que %d\n", X, Y);
         if(X == 1 && Y == 0){
-			printf("%d nao eh multiplo de %d\n", X, Y);
-		}
-		else if(X%Y == 0){
+	    printf("%d nao eh multiplo de %d\n", X, Y);
+	} else if(X%Y == 0){
             printf("%d eh multiplo de %d\n", X, Y);
-        }
-        else{
+        } else{
             printf("%d nao eh multiplo de %d\n", X, Y);
         }
-      }
-      else if(X < Y){
-        printf("%d eh maior que %d\n", Y, X);
+      } else if(X < Y){
+            printf("%d eh maior que %d\n", Y, X);
 		if(X == 0 && Y == 1){
 			printf("%d nao eh multiplo de %d\n", Y, X);
-		}
-        else if(Y%X == 0){
-            printf("%d eh multiplo de %d\n", Y, X);
-        }
-        else{
-            printf("%d nao eh multiplo de %d\n", Y, X);
+		} else if(Y%X == 0){
+                        printf("%d eh multiplo de %d\n", Y, X);
+        } else{
+                        printf("%d nao eh multiplo de %d\n", Y, X);
         }
       }
    }
