@@ -2,21 +2,25 @@
 
 int main() {
     int senhaCadastrada;
-    int senha; 
+    int senha;
 
     scanf("%d", &senhaCadastrada);
-    printf("senha cadastrada: %04d\n", senhaCadastrada);
 
-    scanf("%d", &senha);
-
-    while (senha != senhaCadastrada){
-        printf("senha  invalida!\n");
-        scanf("%d", &senha); 
-    }
-
-    if(senha == senhaCadastrada){
-         printf("senha valida!\n");
+    if (senhaCadastrada < 1000 || senhaCadastrada > 9999) {
+        return 1;
     } 
+    else {
+      printf("senha cadastrada: %d\n", senhaCadastrada);
+      scanf("%d", &senha);  
+         while (senha != senhaCadastrada){
+              printf("senha invalida!\n");
+              scanf("%d", &senha);
+              }
+         }  
 
+         if (senha == senhaCadastrada){
+              printf("senha valida!\n");
+         }
+              
     return 0;
-}
+} 
